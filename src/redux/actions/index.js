@@ -6,6 +6,11 @@ export const submitEmail = (email) => ({
   payload: email,
 });
 
+export const addExpenses = (expense) => ({
+  type: 'ADD_EXPENSES',
+  expense,
+});
+
 export const responseApiSucess = (currencies) => ({
   type: 'RESPONSE_API_SUCESS',
   payload: currencies,
