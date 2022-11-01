@@ -8,9 +8,9 @@ class WalletForm extends Component {
   state = {
     value: 0,
     description: '',
-    currency: '',
-    method: '',
-    tag: '',
+    currency: 'USD',
+    method: 'Dinheiro',
+    tag: 'Alimentação',
     id: 0,
   };
 
@@ -26,7 +26,7 @@ class WalletForm extends Component {
     });
   };
 
-  testeButton = async () => {
+  handleButton = async () => {
     const { addExpenseProp } = this.props;
     const api = await economyApi();
     console.log('teste');
@@ -38,9 +38,6 @@ class WalletForm extends Component {
         id: prev.id + 1,
         value: '',
         description: '',
-        currency: '',
-        method: '',
-        tag: '',
       }));
     });
   };
@@ -82,9 +79,9 @@ class WalletForm extends Component {
           value={ method }
           onChange={ this.handleChange }
         >
-          <option value="dinehiro">Dinheiro</option>
-          <option value="cartão-credito">Cartão de crédito</option>
-          <option value="cartao-debito">Cartão de débito</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Cartão de crédito">Cartão de crédito</option>
+          <option value="Cartão de débito">Cartão de débito</option>
         </select>
         <select
           data-testid="tag-input"
@@ -101,7 +98,7 @@ class WalletForm extends Component {
         <button
           type="button"
           onClick={ () => {
-            this.testeButton();
+            this.handleButton();
           } }
         >
           Adicionar despesa

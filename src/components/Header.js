@@ -6,19 +6,16 @@ class Header extends Component {
   render() {
     const { email, expenses } = this.props;
     const sumExpenses = expenses.reduce((acc, cur) => {
-      const rates = Object.entries(cur.exchangeRates);
-      const currency = rates.find((e) => e[0] === cur.currency)[1];
-      const convertValue = cur.value * currency.ask;
-      return acc + convertValue;
+      console.log(cur.exchangeRates[cur.currency].ask);
+      const newValue = Number(cur.value) * Number(cur.exchangeRates[cur.currency].ask);
+      return acc + newValue;
     }, 0);
     return (
       <div>
         <p data-testid="email-field">{email}</p>
-        <p data-testid="total-field">0</p>
-        <p data-testid="total-field">{parseFloat(sumExpenses).toFixed(2)}</p>
+        <p data-testid="total-field">{sumExpenses.toFixed(2)}</p>
         <select data-testid="header-currency-field">
           <option value="BRL">BRL</option>
-          <option value="USD">USD</option>
 
         </select>
       </div>
