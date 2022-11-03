@@ -15,6 +15,12 @@ export const responseApiSucess = (currencies) => ({
   type: 'RESPONSE_API_SUCESS',
   payload: currencies,
 });
+
+export const deleteExpenses = (e) => ({
+  type: 'DELETE_EXPENSES',
+  id: e,
+});
+
 // thunk
 export function fetchApi() {
   return async (dispatch) => {
