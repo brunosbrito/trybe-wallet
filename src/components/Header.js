@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Logo from '../imgs/Logo.png';
+import { DivHeader, Expenditure, Profile } from '../styles/headerStyle';
+import profile from '../imgs/Vector.png';
+import coins from '../imgs/coins.png';
 
 class Header extends Component {
   render() {
@@ -11,14 +15,24 @@ class Header extends Component {
       return acc + newValue;
     }, 0);
     return (
-      <div>
-        <p data-testid="email-field">{email}</p>
-        <p data-testid="total-field">{sumExpenses.toFixed(2)}</p>
-        <select data-testid="header-currency-field">
-          <option value="BRL">BRL</option>
+      <DivHeader>
+        <img src={ Logo } alt="Logo TrybeWallet" />
+        <Expenditure>
+          <img src={ coins } alt="Moedas" />
+          <p data-testid="total-field">
+            Total de Despesas:
+            {' '}
+            {sumExpenses.toFixed(2)}
+            {' '}
+            BRL
+          </p>
+        </Expenditure>
+        <Profile>
+          <img src={ profile } alt="profile" />
+          <p data-testid="email-field">{email}</p>
+        </Profile>
 
-        </select>
-      </div>
+      </DivHeader>
     );
   }
 }

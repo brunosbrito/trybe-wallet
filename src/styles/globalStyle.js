@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  background-color: #44d898;
+  background-color: #2FC18C;
   background-size: cover;
 }`;
 
