@@ -17,7 +17,7 @@ Front-end:
 
 > Frontend
 ```bash
-cd recipes-app
+cd trybe-wallet
 npm install
 ``` 
 ## Executando aplicação
