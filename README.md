@@ -1,7 +1,7 @@
-# Recipes App
+# Trybe Wallet
 
 # Contexto
-Este projeto trata-se de uma aplicação Front End onde é possivel fazer o ligin, escolher ou pesquisar uma receita, podendo iniciar ela e favoritar.
+Este projeto trata-se de uma aplicação Front End onde é possivel fazer o ligin adcionar despesas e a conversão das moedas utilizadas para o Real.
 
 ## Técnologias usadas
 
