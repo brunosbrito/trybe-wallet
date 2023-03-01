@@ -1,5 +1,9 @@
 # Trybe Wallet
 
+![Tela do projeto](https://raw.githubusercontent.com/brunosbrito/trybe-wallet/main/public/tela-do-projeto.png)
+
+Link para acessar a aplicação: [Trybe Wallet](https://brunosbrito.github.io/trybe-wallet/#/)
+
 # Contexto
 Este projeto trata-se de uma aplicação Front End onde é possivel fazer o ligin adcionar despesas e a conversão das moedas utilizadas para o Real.
 
@@ -35,6 +39,3 @@ npm install
   ```
     npm test
   ```
-![Tela do projeto](https://raw.githubusercontent.com/brunosbrito/trybe-wallet/main/public/tela-do-projeto.png)
-
-Link para acessar a aplicação: [Trybe Wallet](https://brunosbrito.github.io/trybe-wallet/#/)
