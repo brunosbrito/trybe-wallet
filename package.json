@@ -21,7 +21,10 @@
     "styled-components": "^5.3.6",
     "stylelint-order": "5.0.0"
   },
+  "homepage": "https://brunosbrito.github.io/trybe-wallet",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "cy": "env CY_CLI=true cypress run",
     "cy:open": "cypress open --e2e --browser chrome",
     "start": "env ESLINT_NO_DEV_ERRORS=true react-scripts start",
@@ -52,6 +55,7 @@
     "cypress": "10.4.0",
     "cypress-multi-reporters": "1.6.1",
     "eslint-config-trybe-frontend": "^1.3",
+    "gh-pages": "^5.0.0",
     "jest-localstorage-mock": "2.4.21",
     "mocha": "10.0.0",
     "mochawesome": "7.1.3",
