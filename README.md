@@ -5,7 +5,7 @@
 Link para acessar a aplicação: [Trybe Wallet](https://brunosbrito.github.io/trybe-wallet/#/)
 
 # Contexto
-Este projeto trata-se de uma aplicação Front End onde é possivel fazer o ligin adcionar despesas e a conversão das moedas utilizadas para o Real.
+Este projeto trata-se de uma aplicação Front End onde é possivel fazer o ligin adicionar despesas e a conversão das moedas utilizadas para o Real.
 
 ## Técnologias usadas
 
