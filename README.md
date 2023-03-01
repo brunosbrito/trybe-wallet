@@ -35,3 +35,6 @@ npm install
   ```
     npm test
   ```
+![Tela do projeto](https://raw.githubusercontent.com/brunosbrito/trybe-wallet/main/public/tela-do-projeto.png)
+
+Link para acessar a aplicação: [Trybe Wallet](https://brunosbrito.github.io/trybe-wallet/#/)
